@@ -1,0 +1,211 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+/*
+breakpoints
+mobile 0-639px
+tablet 640px-1099px
+pc 1100px and more
+*/
+
+body {
+    background-color: #FAFAFA;
+    color: #8B8B8B;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*mobile version*/
+
+/*traveler image*/
+.image-traveler {
+    width: 100%;
+    max-width: 425px;
+}
+/*travel image end*/
+
+hr {
+    width: 60px;
+    border: 1px solid #407BFF;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+h1 {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #000000;
+    font-weight: 400;
+    margin:60px 0 15px 0;
+}
+
+.section-container p {
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+.main-content {
+    text-align: center;
+    margin: 60px 20px;
+}
+
+
+/*buttons*/ 
+.buttons ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.button {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.first {
+    background-color: #407BFF;
+    margin-bottom: 10px;
+    
+}
+
+.second {
+    background-color: #8B8B8B;
+}
+
+
+/*sections with icons images*/
+.icon {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    margin-bottom: 15px;
+}
+
+.icon img {
+    padding: 20px 0 20px 20px;
+}
+
+.icon p  {
+    margin: 0 0 0 30px;
+    padding-right: 20px;
+}
+
+/*tablet version*/ 
+
+@media screen and (min-width: 640px) {
+    .buttons ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .first {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .icons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .icon {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0;
+        padding: 40px 15px 20px 15px;
+    }
+
+    .icon img {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .icon p {
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+/*pc version*/
+
+@media screen and (min-width: 1100px) {
+    .main-content{
+        max-width: 1040px;
+        margin: 60px auto;
+    }
+
+    hr {
+        display: inline-block;
+    }
+
+    .content-container {
+        max-width: 490px;
+    }
+
+    .section-container {
+        display: flex;
+        justify-content: space-between;    
+    }
+
+    .icon {
+        padding-bottom: 40px;
+    }
+
+    /*section about travel agency*/
+    .image-traveler {
+        order: 2;
+    }
+
+    .travel-agency {
+        text-align: left;
+    }
+
+    .buttons ul {
+        justify-content: flex-start;
+    }
+
+    /*second section - services*/
+
+    .travel-services {
+        order: 2;
+        max-width: 430px;
+        text-align: left;
+    }
+
+    .second-container,
+    .third-container {
+        margin-top: 80px;
+    }
+
+    .icons {
+        max-width: 550px;
+    }
+
+    /*last section - delegate services*/
+
+    .delegate-services {
+        max-width: 430px;
+        text-align: left;
+    }
+
+
+}
