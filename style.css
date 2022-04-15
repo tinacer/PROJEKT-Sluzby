@@ -25,7 +25,7 @@ body {
     width: 100%;
     max-width: 425px;
 }
-/*travel image end*/
+/*traveler image end*/
 
 hr {
     width: 60px;
@@ -63,19 +63,17 @@ p {
 
 
 /*buttons*/ 
-.buttons ul {
-    list-style: none;
+.buttons {
     margin: 0;
     padding-left: 0;
 }
 .button {
     color: #FFFFFF;
-    display: inline-block;
     font-size: 14px;
     font-weight: 500;
     padding: 10px 30px;
     border-radius: 20px;
-    text-decoration: none;
+    border: none;
 }
 
 .first {
@@ -111,11 +109,6 @@ p {
 /*tablet version*/ 
 
 @media screen and (min-width: 640px) {
-    .buttons ul {
-        display: flex;
-        justify-content: center;
-    }
-
     .first {
         margin-right: 20px;
         margin-bottom: 0;
@@ -177,10 +170,6 @@ p {
 
     .travel-agency {
         text-align: left;
-    }
-
-    .buttons ul {
-        justify-content: flex-start;
     }
 
     /*second section - services*/
